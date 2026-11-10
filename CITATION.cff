@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use these atlases, please cite the article below."
+title: "Pig Brain MRI Atlas, version 2.0 (4-week and 12-week)"
+version: "2.0"
+date-released: 2021-04-01
+url: "https://pigmri.illinois.edu/neuroimaging-resources"
+repository-code: "https://github.com/Nutrition-Health-Neuroscience-DilgerLab/pig-brain-atlas-v2.0"
+license: CC-BY-NC-ND-4.0
+authors:
+  - family-names: Fil
+    given-names: Joanne E.
+  - family-names: Joung
+    given-names: Sangyun
+  - family-names: Zimmerman
+    given-names: Benjamin J.
+  - family-names: Sutton
+    given-names: Bradley P.
+  - family-names: Dilger
+    given-names: Ryan N.
+    email: rdilger2@illinois.edu
+preferred-citation:
+  type: article
+  title: "High-resolution magnetic resonance imaging-based atlases for the young and adolescent domesticated pig (Sus scrofa)"
+  authors:
+    - family-names: Fil
+      given-names: Joanne E.
+    - family-names: Joung
+      given-names: Sangyun
+    - family-names: Zimmerman
+      given-names: Benjamin J.
+    - family-names: Sutton
+      given-names: Bradley P.
+    - family-names: Dilger
+      given-names: Ryan N.
+  journal: "Journal of Neuroscience Methods"
+  volume: 354
+  start: 109107
+  year: 2021
+  doi: "10.1016/j.jneumeth.2021.109107"

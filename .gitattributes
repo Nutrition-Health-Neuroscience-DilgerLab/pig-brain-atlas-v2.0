@@ -1,0 +1,4 @@
+*.nii    binary
+*.nii.gz binary
+*.xlsx   binary
+*.zip    binary

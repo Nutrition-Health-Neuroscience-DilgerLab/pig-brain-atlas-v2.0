@@ -1,0 +1,8 @@
+# Original download archives (the extracted contents in atlas/ are tracked)
+downloads/*.zip
+
+# OS and editor files
+.DS_Store
+._*
+Thumbs.db
+~$*.xlsx
