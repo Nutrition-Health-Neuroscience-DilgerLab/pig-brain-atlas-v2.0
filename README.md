@@ -25,7 +25,7 @@
 
 This repository holds version 2.0 of the magnetic resonance imaging (MRI) brain atlases for the domestic pig at 4 and 12 weeks of age, as described in [Fil et al. (2021)](https://doi.org/10.1016/j.jneumeth.2021.109107). The atlases were built by the Piglet Nutrition & Cognition Laboratory (Department of Animal Sciences) together with the Biomedical Imaging Center at the Beckman Institute for Advanced Science and Technology, University of Illinois Urbana-Champaign, from scans of 20 artificially reared male pigs at 4 weeks of age and 13 sow-reared male pigs at 12 weeks of age.
 
-Version 2.0 was posted on the [Pig Imaging Group website](https://pigmri.illinois.edu/neuroimaging-resources) on 1 April 2021. The files in `atlas/` are unpacked unchanged from the two official downloads, which are also attached to the [v2.0 release](https://github.com/Nutrition-Health-Neuroscience-DilgerLab/pig-brain-atlas-v2.0/releases/tag/v2.0) (about 17 MB together, versus 6.9 GB unpacked).
+Version 2.0 was posted on the [Pig Imaging Group website](https://pigmri.illinois.edu/neuroimaging-resources) on 1 April 2021. The files in `atlas/` are unpacked unchanged from the two official downloads, which are also attached to the [v2.0 release](https://github.com/Nutrition-Health-Neuroscience-DilgerLab/pig-brain-atlas-v2.0/releases/tag/v2.0) (about 17 MB together, versus 7.4 GB unpacked).
 
 ## At a glance
 
@@ -37,8 +37,8 @@ Version 2.0 was posted on the [Pig Imaging Group website](https://pigmri.illinoi
 | ROI thresholds | 0, 25, 50% | 0, 25, 50% |
 | Tissue classes | gray matter, white matter, CSF, not-brain | gray matter, white matter, CSF, not-brain |
 | FA template | yes | no (added in v2.1) |
-| Hemisphere masks | yes (left and right) | no |
-| Uncompressed size | 1.5 GB | 5.5 GB |
+| Hemisphere masks | yes (left and right) | yes (left and right) |
+| Uncompressed size | 1.5 GB | 5.8 GB |
 | File format | NIfTI-1 (`.nii`) | NIfTI-1 (`.nii`) |
 
 ## Contents
@@ -61,6 +61,7 @@ Version 2.0 was posted on the [Pig Imaging Group website](https://pigmri.illinoi
 │       ├── Pig_Brain_Atlas_12wk.nii
 │       ├── ROI Combined/Combined_thr{0,25,50}_wk12.nii, ROI_Labels.xlsx
 │       ├── Regions of Interest/ROI_thr{0,25,50}_wk12/<Region>_wk12_thr*.nii
+│       ├── Regions of Interest/{Left,Right}_Side_12wk.nii     hemisphere masks
 │       └── Tissue_Probability_Maps/{Gray_Matter,White_Matter,Cerebrospinal_Fluid,NotBrain}_12wk.nii
 ├── downloads/SHA256SUMS                                 checksums of the original archives
 ├── ATLAS_SHA256SUMS                                     checksum of every extracted file
@@ -71,7 +72,7 @@ Version 2.0 was posted on the [Pig Imaging Group website](https://pigmri.illinoi
 
 Folder and file names are kept exactly as they appear in the download, including the spaces in some folder names and the different age suffixes (`_4wk`, `_wk12`).
 
-**Known issues fixed in v2.1.** In this version, the region masks hold values between 0 and 1 rather than strictly binary values, and values are not always consistent across the three thresholds. The not-brain maps hold values of 0 and −1. In the 12-week combined maps, the left and right superior colliculi (labels 14 and 25) have no voxels; use the separate masks for those regions. The two 4-week hemisphere masks have a slightly different voxel size in their headers (0.499 mm) from the rest of the 4-week files.
+**Known issues fixed in v2.1.** In this version, the region masks hold values between 0 and 1 rather than strictly binary values, and values are not always consistent across the three thresholds. The not-brain maps hold values of 0 and −1. In the 12-week combined maps, the left and right superior colliculi (labels 14 and 25) have no voxels; use the separate masks for those regions. The two 4-week hemisphere masks have a slightly different voxel size in their headers (0.499 mm) from the rest of the 4-week files, and one voxel in the 12-week left hemisphere mask has the value 99 instead of 1. Version 2.1 does not include hemisphere masks.
 
 ## Labeled regions
 
